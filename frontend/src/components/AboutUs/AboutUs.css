@@ -1,0 +1,60 @@
+.aboutus {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .aboutus1 {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    max-width: 300px; 
+    margin: 10px; 
+  }
+  
+  .aboutus1 img {
+    width: 80px;
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: rgba(204, 41, 44, 0.249);
+    border-radius: 50%;
+    border: 1px solid rgba(204, 41, 44, 0.249);
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .aboutus1 h5 {
+    padding-bottom: 7px;
+  }
+  
+  .aboutus1:hover {
+    transform: rotateY(360deg);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .aboutus {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutus1 {
+      max-width: 100%; 
+    }
+  
+    .aboutus1 img {
+      width: 60px; 
+      height: 50px;
+    }
+  }
+  
